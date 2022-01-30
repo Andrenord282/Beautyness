@@ -1,0 +1,43 @@
+.btn {
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: $backgroundBtn;
+    cursor: pointer;
+
+    // .btn_reserv
+
+    &_reserv {
+        position: relative;
+        font-size: 14px;
+        color: $white;
+        letter-spacing: 0.10em;
+        line-height: lineHeight(21, 14);
+        padding: 20px 30px 20px 58px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            width: 18px;
+            height: 18px;
+            transform: translateY(-50%);
+            mask-image: url(@img/icons/icons.svg#date);
+            mask-size: 18px 18px;
+            mask-repeat: no-repeat;
+            background-color: $white;
+        }
+
+    }
+
+    // .btn_intro
+
+    &_intro {
+        position: relative;
+        font-size: 14px;
+        color: $white;
+        letter-spacing: 0.12em;
+        line-height: lineHeight(19, 13);
+        padding: 18px 29px;
+    }
+}

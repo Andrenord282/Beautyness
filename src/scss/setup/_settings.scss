@@ -1,0 +1,39 @@
+$white: #fff;
+$gumbo: #7a9ca5;
+$fontColorDefaulte: #141414;
+$fontColorDescr: #555;
+$smaltBlue: #5C8692;
+
+$backgroundBtn: #5C8692;
+$catSkill: #bef3f5;
+
+
+$fontFamilyDefaulte: 'Manrope', sans-serif;
+$fontFamilyHeadliner: 'Playfair Display', serif;
+
+body {
+    font-family: $fontFamilyDefaulte;
+    font-size: 16px;
+    font-weight: 400;
+    color: $fontColorDefaulte;
+
+    &.fixed {
+        position: fixed;
+    }
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    &_header {
+        max-width: 1400px;
+        padding: 0 20px;
+
+        @media (min-width: 971px) {
+            padding: 0 10px;
+        }
+    }
+
+}
