@@ -2,7 +2,46 @@
     font-size: 13px;
     text-transform: uppercase;
     background-color: $backgroundBtn;
+    line-height: lineHeight(19, 13);
+    letter-spacing: 0.12em;
     cursor: pointer;
+    transition: background-color .3s linear, color .3s linear;
+
+    &::after {
+        transition: background-color .3s linear, color .3s linear;
+
+    }
+
+
+    // .btn_primary
+    &_primary {
+        &:hover {
+            color: $fontColorDefaulte;
+            background-color: $gumbo;
+
+            &::after {
+                background-color: $fontColorDefaulte;
+            }
+        }
+    }
+
+    // .btn_secondary
+
+    &_secondary {
+        text-transform: uppercase;
+        border: 2px $smaltBlue solid;
+        background-color: $white;
+        padding: 18px 32px 18px 32px;
+
+        &:hover {
+            color: $white;
+            background-color: $smaltBlue;
+
+            &::after {
+                background-color: $smaltBlue;
+            }
+        }
+    }
 
     // .btn_reserv
 
@@ -27,7 +66,6 @@
             mask-repeat: no-repeat;
             background-color: $white;
         }
-
     }
 
     // .btn_intro
@@ -36,8 +74,6 @@
         position: relative;
         font-size: 14px;
         color: $white;
-        letter-spacing: 0.12em;
-        line-height: lineHeight(19, 13);
         padding: 18px 29px;
     }
 }
